@@ -65,7 +65,7 @@ border-bottom: ${props => props.BDcolor || "rgb(115, 162, 175)"}  solid 2px;
 const IntroBlock = styled.div`
 color: ${props => props.color || "rgb(238, 245, 244)"};
 font-size: 20px;
-height: 600px;
+height: 620px;
 display: flex;
 flex-direction: ${props => props.FlexD || "row"};
 justify-content: ${props => props.JustifyC || "space-evenly"};
@@ -81,6 +81,10 @@ border: ${props => props.BDcolor ||"rgba(180, 180, 180, 0.6)"} solid 2px;
 background-color: ${props => props.BGcolor || "rgba(23, 23, 23, 0.05)"};
 padding:16px;
 text-align: center;
+@media only screen and (max-width: 800px) {
+    padding:0 auto;
+    margin:0 auto;
+};
 `
 const ProTextBoxUnC = styled.div`
 display: inline-block;
@@ -99,7 +103,7 @@ const VFrameL = styled.iframe`
     height:360px;
     margin:10px;
     border:0;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1550px) {
         width:426.666666667px;
         height:240px;
     };
@@ -108,9 +112,17 @@ const VFrameS = styled.iframe`
     width:480px;
     height:322px;
     border:0;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width:1550px) {
         width:426.666666667px;
         height:240px;
+    };
+    @media only screen and (max-width:800px) {
+        width:325px;
+        height:200px;
+    };
+    @media only screen and (max-width:500px) {
+        width:250px;
+        height:180px;
     };
 `
 const BigBlock = styled.div`
@@ -149,6 +161,15 @@ const IconArea = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+`
+const IconSwitcher = styled.div`
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        }
 `
 
 const Icon = styled.img`
@@ -266,17 +287,29 @@ flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 margin:0 23px;
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 800px) {
     width: 100%;
     flex-direction: column;
     grid-template-columns: none;
+    margin:0 auto;
     };
 `
 const DuoServiceBlockColumn = styled.div`
 width:100%;
 margin:0px;
+align-items: center;
 display: grid;
 grid-template-rows: 60px 60px auto 100px 80px 30px 30px;
+justify-self: center;
+@media only screen and (max-width: 800px) {
+    width: 240px;
+    };
+`
+const FlexBoxCentered = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const FlexBoxColumn = styled.div`
 display: flex;
@@ -329,6 +362,12 @@ const ShowSlide = styled.div`
     justify-content: center;
     align-items: center;
     margin: 2%;
+    @media only screen and (max-width: 800px) {
+        border-radius: ${props => props.BorderRadius || "0px 0px"};
+        border: ${props => props.BDcolor ||"rgba(23, 23, 23)"} solid 0px;
+        padding:0 auto;
+        margin: 0%;
+        };
 `
 const SlideBuffer = styled.div`
 height: 100%;
@@ -338,7 +377,10 @@ padding:20px;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+@media only screen and (max-width: 800px) {
+    padding:0 auto;
+    };
 `
 
 
-export {A,P,IconArea,Icon,Logo, IconDarker,FlexBoxColumn, H1, H2, H3,PB,Header, HeaderItem, IntroBlock,TextBoxUnC,ProTextBoxUnC, IntroBox, ProTextBox, SpDiv, DuoServiceBlockRow, TextBox, ProImgBox, DivWBorder, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrameL,VFrameS, LookBtn,LookBox, LookHostBox, SlideShadowBox, BigBlock, BigBlockR, ShowSlide, SlideBuffer}
+export {A,P,IconArea,Icon,Logo, IconDarker,IconSwitcher,FlexBoxColumn,FlexBoxCentered, H1, H2, H3,PB,Header, HeaderItem, IntroBlock,TextBoxUnC,ProTextBoxUnC, IntroBox, ProTextBox, SpDiv, DuoServiceBlockRow, TextBox, ProImgBox, DivWBorder, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrameL,VFrameS, LookBtn,LookBox, LookHostBox, SlideShadowBox, BigBlock, BigBlockR, ShowSlide, SlideBuffer}

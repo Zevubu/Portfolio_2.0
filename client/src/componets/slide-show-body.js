@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {A,ShowSlide,ProTextBox,H2,VFrameS, PB, SlideBuffer, DuoServiceBlockColumn, TextBox} from '../styles/home-styles';
+import {A,ShowSlide,ProTextBox,H2,FlexBoxCentered,VFrameS, PB, SlideBuffer, DuoServiceBlockColumn, TextBox} from '../styles/home-styles';
 
 // id:1,
 // Name:
@@ -41,12 +41,14 @@ function SlideFiller(props){
                         <br/>
                         <PB>{props.About}</PB>
                     </TextBox>
+                    <FlexBoxCentered>
                     <VFrameS 
                         src={props.VLink} 
                         frameborder="0" 
                         allow="autoplay; fullscreen" 
                         allowfullscreen 
                     />
+                    </FlexBoxCentered>
                     <TextBox>
                         <H2>Experience Includes:</H2>
                         <PB>{props.MyRole}</PB>

@@ -46,7 +46,7 @@ export default function Footer() {
         <ExpansionPanelDetails>
           <FlexBoxColumn>
             <Typography>
-              <H3>Small and hidden picture credits:</H3>
+              <H3>Small and hidden pictures/credits:</H3>
             </Typography>
             <Typography> <H3>Carnival at night Image by <A href="https://unsplash.com/@ethanchoover">Ethan Hoovers </A></H3></Typography>
             <Typography> <H3>Fabulous queens at trans rally Image by <A href="https://unsplash.com/@karlbewick">Karl Bewick</A></H3></Typography>

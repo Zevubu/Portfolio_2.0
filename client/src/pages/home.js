@@ -1,7 +1,7 @@
 import React from "react";
 import SlideShow from "../componets/slide-show-base"
 
-import {A,Icon, H1, IconArea,IconDarker,FlexBoxColumn,TextBoxUnC,TextBox, ProTextBoxUnC, H2, H3, Header,DivWBorder, HeaderItem, IntroBlock, IntroBox, ProTextBox,SpDiv,ProImgBox, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrame, SlideShadowBox, BigBlock, BigBlockR, DuoServiceBlockRow} from "../styles/home-styles"
+import {A,Icon, H1, IconArea,IconDarker,IconSwitcher,FlexBoxColumn,TextBoxUnC,TextBox, ProTextBoxUnC, H2, H3, Header,DivWBorder, HeaderItem, IntroBlock, IntroBox, ProTextBox,SpDiv,ProImgBox, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrame, SlideShadowBox, BigBlock, BigBlockR, DuoServiceBlockRow} from "../styles/home-styles"
 
 function Home(){
 
@@ -45,17 +45,25 @@ function Home(){
                             <br/>
                             <H2> Known among colleagues as charismatic, productive, task oriented, and creative. With an attention to detail no matter the complexity of the project.</H2>
                             <IconArea>
-                                <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                <Icon class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"/>
-                                <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                <IconSwitcher>
+                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                </IconSwitcher>
+                                <IconSwitcher>
+                                    <Icon class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"/>
+                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                </IconSwitcher>
                             </IconArea>
                             <IconArea>
-                                <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                <Icon src="https://hangtenseo.com/wp-content/uploads/2019/10/Python-Logo.png" alt="Python"/>
-                                <Icon src="https://www.innocreate.com/wp-content/uploads/2017/07/jsonlogo-300x300.png" alt="Json"/>
-                                <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
-                                <Icon src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="MongoDB"/>
+                                <IconSwitcher>
+                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
+                                    <Icon src="https://hangtenseo.com/wp-content/uploads/2019/10/Python-Logo.png" alt="Python"/>
+                                </IconSwitcher>
+                                <IconSwitcher>
+                                    <Icon src="https://www.innocreate.com/wp-content/uploads/2017/07/jsonlogo-300x300.png" alt="Json"/>
+                                    <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
+                                    <Icon src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="MongoDB"/>
+                                </IconSwitcher>
                             </IconArea>
                         </ProTextBox>
                         <TextBox>
@@ -67,9 +75,9 @@ function Home(){
                             </div>
                         </TextBox>
                     </FlexBoxColumn>
-                    <ProImgBox BGPx="0px" bgImg="https://adventreon-img-bucket.s3-us-west-1.amazonaws.com/20191018675742504477207294.jpg">
+                    <ProImgBox BGPx="0px" bgImg="https://adventreon-img-bucket.s3-us-west-1.amazonaws.com/moodyish.jpg">
                         <IntroBlock/>
-                        <H3>Image by</H3>  
+                        <H3> </H3>  
                     </ProImgBox>
                 </DuoServiceBlock>
                 <DivWBorder>
@@ -114,12 +122,16 @@ function Home(){
                             </ul>
                             <br></br>
                             <IconArea>
-                                <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                <Icon src="https://miro.medium.com/max/370/0*PSZC5NvmEZ9TY8Eb" alt="CloudSQL"/>
-                                <Icon src="https://www.logolynx.com/images/logolynx/8c/8c8381f2fb4676b89af494b79dc68374.png" alt="CloudSQL"/>
-                                <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                <IconSwitcher>
+                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
+                                </IconSwitcher>
+                                <IconSwitcher>
+                                    <Icon src="https://miro.medium.com/max/370/0*PSZC5NvmEZ9TY8Eb" alt="CloudSQL"/>
+                                    <Icon src="https://www.logolynx.com/images/logolynx/8c/8c8381f2fb4676b89af494b79dc68374.png" alt="CloudSQL"/>
+                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                </IconSwitcher>
                             </IconArea>
                         </ProTextBoxUnC>
                     </FlexBoxColumn>
@@ -156,11 +168,15 @@ function Home(){
                             </ul>
                             <br/>
                             <IconArea>
-                                <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
-                                <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                <IconSwitcher>
+                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                </IconSwitcher>
+                                <IconSwitcher>
+                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
+                                    <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
+                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                </IconSwitcher>
                             </IconArea>
                         </ProTextBoxUnC>
                     </FlexBoxColumn>
@@ -185,7 +201,7 @@ function Home(){
                         </HeaderItem>
                     </SpHeaderA>
                 </DivWBorder> */}
-                
+
                 {/* <DuoServiceBlock>
                     <ProTextBox>
                         <H2 color="rgb(23, 23, 23)">In a sociaty that consitantly devalues labor, and a culture that's obsesesed with screaming "Get a real job!".</H2>
