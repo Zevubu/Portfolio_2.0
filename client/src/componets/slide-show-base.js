@@ -25,11 +25,10 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 // StartDate:,
 // EndDate:
 
-function SlideShowBase (props){
+function SlideShowBase (){
     const matches = useMediaQuery('(min-width:800px)');
     const num = matches ? 3 : 1.25
     const scNum = matches ? 2 : 1
-    console.log(`Filler data: ${JSON.stringify(Filler[1])}`)
     return(
         <div>
             <BigBlock>

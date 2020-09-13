@@ -1,7 +1,7 @@
 import React from "react";
 import SlideShow from "../componets/slide-show-base"
 
-import {A,Icon, H1, IconArea,IconDarker,IconSwitcher,FlexBoxColumn,TextBoxUnC,TextBox, ProTextBoxUnC, H2, H3, Header,DivWBorder, HeaderItem, IntroBlock, IntroBox, ProTextBox,SpDiv,ProImgBox, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrame, SlideShadowBox, BigBlock, BigBlockR, DuoServiceBlockRow} from "../styles/home-styles"
+import {A,Icon, H1,H1Plus, IconArea,IconDarker,IconS, IconSDarker,IconSwitcher,DuoSBlockBord,FlexBoxColumn,FlexBoxRow,FlexBoxRC,TextBoxUnC,TextBox, ProTextBoxUnC, H2, H3, Header,DivWBorder, HeaderItem, IntroBlock, IntroBox, ProTextBox,SpDiv,ProImgBox, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrame, SlideShadowBox, BigBlock, BigBlockR, DuoServiceBlockRow} from "../styles/home-styles"
 
 function Home(){
 
@@ -13,7 +13,7 @@ function Home(){
                     {/* <VFrame src="https://player.vimeo.com/video/412924050" frameborder="0px" allow="autoplay; fullscreen" allowfullscreen></VFrame> */}
                     <div>
                         <ProTextBox>
-                        <H1>Zev Ubu Hoffman</H1>
+                        <H1Plus>Zev Ubu Hoffman</H1Plus>
                             {/* <H2>A place for immersive experience makers, circus folk, musicians, puppeteers, clowns, carnies, and healers, to name a few.</H2> */}
                             {/* <H2>To entertain, share their skills, and tell their stories.</H2>
                             <H2>All while selling their own content. </H2> */}
@@ -33,7 +33,7 @@ function Home(){
                 <DivWBorder>
                     <SpHeaderA>
                         <HeaderItem>
-                            <H2>Full Stack Web Development</H2>
+                            <H2>Web Development</H2>
                         </HeaderItem>
                     </SpHeaderA>
                 </DivWBorder>
@@ -44,35 +44,37 @@ function Home(){
                             <H2> As well an extensive background in design, color theory, social engineering and working on teams in both leadership roles and hands on positions.</H2> 
                             <br/>
                             <H2> Known among colleagues as charismatic, productive, task oriented, and creative. With an attention to detail no matter the complexity of the project.</H2>
-                            <IconArea>
-                                <IconSwitcher>
-                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                </IconSwitcher>
-                                <IconSwitcher>
-                                    <Icon class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"/>
-                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
-                                </IconSwitcher>
-                            </IconArea>
-                            <IconArea>
-                                <IconSwitcher>
-                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                    <Icon src="https://hangtenseo.com/wp-content/uploads/2019/10/Python-Logo.png" alt="Python"/>
-                                </IconSwitcher>
-                                <IconSwitcher>
-                                    <Icon src="https://www.innocreate.com/wp-content/uploads/2017/07/jsonlogo-300x300.png" alt="Json"/>
-                                    <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
-                                    <Icon src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="MongoDB"/>
-                                </IconSwitcher>
-                            </IconArea>
+                            <IconSwitcher>
+                                <IconArea>
+                                    
+                                        <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                        <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                    
+                                    
+                                        <Icon class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"/>
+                                        <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                                    
+                                </IconArea>
+                                <IconArea>
+                                    
+                                        <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
+                                        <Icon src="https://hangtenseo.com/wp-content/uploads/2019/10/Python-Logo.png" alt="Python"/>
+                                    
+                                    
+                                        <Icon src="https://www.innocreate.com/wp-content/uploads/2017/07/jsonlogo-300x300.png" alt="Json"/>
+                                        <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
+                                        <Icon src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png" alt="MongoDB"/>
+                                    
+                                </IconArea>
+                            </IconSwitcher>
                         </ProTextBox>
                         <TextBox>
-                            <div> 
-                                <H2>Find Me Here:</H2>
+                            <H2>Find Me Here:</H2>
+                            <FlexBoxRC> 
                                 <a href="https://github.com/Zevubu"><Icon class="icon" src="https://cdn0.iconfinder.com/data/icons/social-circle/595/github-512.png" alt="GitHub"/></a>
                                 <a href="https://www.linkedin.com/in/zev-hoffman-b5770532/"><Icon class="icon" src="https://pndblog.typepad.com/.a/6a00e0099631d0883301bb09d01edf970d-800wi" alt="CSS3"/></a>
                                 <a href="https://stackoverflow.com/users/11111018/zev-hoffman"><Icon class="icon" src="https://www.shareicon.net/data/512x512/2015/08/30/93392_stackoverflow_512x512.png" alt="Javascript"/></a>
-                            </div>
+                            </FlexBoxRC>
                         </TextBox>
                     </FlexBoxColumn>
                     <ProImgBox BGPx="0px" bgImg="https://adventreon-img-bucket.s3-us-west-1.amazonaws.com/moodyish.jpg">
@@ -93,46 +95,42 @@ function Home(){
                     </ProImgBox>
                     <FlexBoxColumn>
                         <ProTextBoxUnC>
-                            <DuoServiceBlock>
+                            <DuoSBlockBord>
                                 <TextBoxUnC BGcolor="rgba(0,0,0,0)">
                                     <H1>Adventreon</H1>
-                                    <H2>CEO, founder, lead developer</H2>
+                                    <H2>CEO, Lead Developer.</H2>
                                 </TextBoxUnC>
                                 <TextBoxUnC BGcolor="rgba(0,0,0,0)">
                                     <H2>March 2020 - present</H2>
                                     <H2>Oakland CA</H2>
                                 </TextBoxUnC>
-                            </DuoServiceBlock>
+                            </DuoSBlockBord>
                             <br/>
                             <TextBoxUnC BGcolor="rgba(0,0,0,0)">
-                                <H2 color="rgb(23, 23, 23)">A steaming site with a focused on performance, and immersive art.</H2>
+                                <H2 color="rgb(23, 23, 23)">A video streaming site with a focus on performance, and immersive art.</H2>
                             </TextBoxUnC>
                             <br/>
                             <TextBoxUnC BGcolor="rgba(0,0,0,0)">
-                                <H2 color="rgb(23, 23, 23)">Experience includes: Working with a small team to build out the website, from the ground up. Built with a React front-end, Node.js server, and CloudSQL database.</H2>
-                                <H2> I also managed the team, and wrote out a comprehensive finacial plan.</H2>
+                                <H2 color="rgb(23, 23, 23)">Experience includes: Assembling and working with a small team to build the website, from the ground up. Made with a React front-end, Node.js server, and CloudSQL database.</H2>
+                                <H2> In addition to this I managed the team, and wrote out a comprehensive business and financial plan.</H2>
                             </TextBoxUnC>
                             <br/>
                             <H2>Key Accomplishments:</H2>
                             <ul>
                                 <li>White boarding and designing the webpage.</li>
                                 <li>Built a dynamic front-end in React with Hooks. Which included, login, Role-based access control(RBAC), interactive slideshows, customizable profiles, and video streaming (through Vimeo api), to name a few. </li>
-                                <li>Built with a RESTful JavaScript API, using Node, Express, Axios, MySQL, JWT, and Passport.</li>
-                                <li>The strange joy that comes from building something you came up with. Like some mad scientist! </li>
+                                <li>Built with a RESTful API using JavaScript, Node, Express, Axios, MySQL, CloudSQL, JWT, Passport, AWS S3, and others.</li>
+                                <li>The strange joy that comes from bringing some idea I had to life, like some mad scientist!</li>
                             </ul>
                             <br></br>
-                            <IconArea>
-                                <IconSwitcher>
-                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                </IconSwitcher>
-                                <IconSwitcher>
-                                    <Icon src="https://miro.medium.com/max/370/0*PSZC5NvmEZ9TY8Eb" alt="CloudSQL"/>
-                                    <Icon src="https://www.logolynx.com/images/logolynx/8c/8c8381f2fb4676b89af494b79dc68374.png" alt="CloudSQL"/>
-                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
-                                </IconSwitcher>
-                            </IconArea>
+                            <FlexBoxRC>
+                                <IconSDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                <IconSDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                <IconS src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>    
+                                <IconS src="https://miro.medium.com/max/370/0*PSZC5NvmEZ9TY8Eb" alt="CloudSQL"/>
+                                <IconS src="https://www.logolynx.com/images/logolynx/8c/8c8381f2fb4676b89af494b79dc68374.png" alt="CloudSQL"/>
+                                <IconS src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                            </FlexBoxRC>
                         </ProTextBoxUnC>
                     </FlexBoxColumn>
                 </DuoServiceBlock>
@@ -140,19 +138,19 @@ function Home(){
                 <DuoServiceBlock>
                     <FlexBoxColumn>
                         <ProTextBoxUnC>
-                            <DuoServiceBlock>
+                            <DuoSBlockBord>
                                 <TextBoxUnC BGcolor="rgba(0,0,0,0)">
-                                    <H1>Cool Magdelene</H1>
+                                    <H1>Cool Magdalene</H1>
                                     <H2>Freelance Web Developer</H2>
                                 </TextBoxUnC>
                                 <TextBoxUnC BGcolor="rgba(0,0,0,0)">
                                     <H2>Feb 2020 – Apr 2020</H2>
                                     <H2>Oakland CA</H2>
                                 </TextBoxUnC>
-                            </DuoServiceBlock>
+                            </DuoSBlockBord>
                             <br/>
                             <TextBoxUnC BGcolor="rgba(0,0,0,0)">
-                                <H2 color="rgb(23, 23, 23)">A booking web-page for an in person coaching location.</H2>
+                                <H2 color="rgb(23, 23, 23)">A booking web-page for an in-person clientele based business.</H2>
                             </TextBoxUnC>
                             <br/>
                             <TextBoxUnC BGcolor="rgba(0,0,0,0)">
@@ -167,24 +165,18 @@ function Home(){
                                 <li>Built a RESTful JavaScript API, using Node, Express, Axios, MySQL, JWT, and Passport.</li>
                             </ul>
                             <br/>
-                            <IconArea>
-                                <IconSwitcher>
-                                    <IconDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
-                                    <IconDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
-                                </IconSwitcher>
-                                <IconSwitcher>
-                                    <Icon src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
-                                    <Icon src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
-                                    <Icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
-                                </IconSwitcher>
-                            </IconArea>
+                            <FlexBoxRC>
+                                    <IconSDarker src="https://www.fullstacklabs.co/img/developersReact/React@2x.png" alt="React"/>
+                                    <IconSDarker class="icon darker" src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="Javascript"/>
+                                    <IconS src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="Node"/>
+                                    <IconS src="http://pngimg.com/uploads/mysql/mysql_PNG9.png" alt="MySQL"/>
+                                    <IconS src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3"/>
+                            </FlexBoxRC>
                         </ProTextBoxUnC>
                     </FlexBoxColumn>
                     <ProImgBox BGPx="1%" bgImg="https://adventreon-img-bucket.s3-us-west-1.amazonaws.com/screencapture-localhost-3000-2020-09-12-20_34_24.png">
                         <IntroBlock/>
-                         
                     </ProImgBox>
-
                 </DuoServiceBlock>
                 <SlideShow></SlideShow>
                 <DivWBorder>

@@ -21,6 +21,15 @@ const H1 = styled.p`
         font-size: 35px;
     };
 `
+const H1Plus = styled(H1)`
+    font-size: 54px;
+    @media only screen and (max-width: 850px) {
+        font-size: 40px;
+    };
+    @media only screen and (max-width: 600px) {
+        font-size: 35px;
+    };
+`
 const H2 = styled.p`
 font-size: 25px;
 margin:0;
@@ -161,23 +170,41 @@ const IconArea = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-`
-const IconSwitcher = styled.div`
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     @media only screen and (max-width: 900px) {
         flex-direction: column;
+        };
+`
+const IconSwitcher = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 900px) {
+        flex-direction: row;
         }
 `
 
 const Icon = styled.img`
     height: 100px;
+    width:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 `
-const IconDarker = styled.img`
+const IconDarker = styled(Icon)`
  background-color: rgba(23, 23, 23, 0.644);
- height: 100px;
+`
+const IconS = styled(Icon)`
+    height: 50px;
+    width: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+`
+const IconSDarker = styled(Icon)`
+ background-color: rgba(23, 23, 23, 0.644);
+ height:50px;
+ width:auto;
+ margin-left: 1%;
+ margin-right: 1%;
 `
 const DivWBorder = styled.div`
 border-top: ${props => props.BDcolor ||"rgb(28, 108, 121)"} solid 2.5px;
@@ -276,11 +303,22 @@ font-size: 40px;
     }
 `
 const DuoServiceBlock = styled.div`
-background-image: url(${props => props.bgImg || ""});
-background-repeat: no-repeat;
-background-size: Cover;
-background-position-x: center;
-background-position-y: 20%;
+height: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+margin:0 23px;
+@media only screen and (max-width: 800px) {
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: none;
+    margin:0 auto;
+    };
+`
+const DuoSBlockBord = styled.div`
+border-radius: ${props => props.BorderRadius || "0.5px"};
+border: ${props => props.BDcolor ||"rgba(180, 180, 180, 0.6)"} solid 2px;
 height: auto;
 display: flex;
 flex-direction: row;
@@ -310,6 +348,17 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+`
+const FlexBoxRow = styled.div`
+display: flex;
+flex-direction: row;
+`
+const FlexBoxRC = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
 `
 const FlexBoxColumn = styled.div`
 display: flex;
@@ -383,4 +432,4 @@ align-items: center;
 `
 
 
-export {A,P,IconArea,Icon,Logo, IconDarker,IconSwitcher,FlexBoxColumn,FlexBoxCentered, H1, H2, H3,PB,Header, HeaderItem, IntroBlock,TextBoxUnC,ProTextBoxUnC, IntroBox, ProTextBox, SpDiv, DuoServiceBlockRow, TextBox, ProImgBox, DivWBorder, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrameL,VFrameS, LookBtn,LookBox, LookHostBox, SlideShadowBox, BigBlock, BigBlockR, ShowSlide, SlideBuffer}
+export {A,P,H1Plus,IconArea,Icon,Logo, IconDarker,IconS, IconSDarker, IconSwitcher,DuoSBlockBord,FlexBoxColumn,FlexBoxRow,FlexBoxCentered,FlexBoxRC, H1, H2, H3,PB,Header, HeaderItem, IntroBlock,TextBoxUnC,ProTextBoxUnC, IntroBox, ProTextBox, SpDiv, DuoServiceBlockRow, TextBox, ProImgBox, DivWBorder, SpHeaderA, DuoServiceBlock, DuoServiceBlockColumn, VFrameL,VFrameS, LookBtn,LookBox, LookHostBox, SlideShadowBox, BigBlock, BigBlockR, ShowSlide, SlideBuffer}

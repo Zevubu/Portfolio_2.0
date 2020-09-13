@@ -11,7 +11,7 @@ import styled, {createGlobalStyle} from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: rgb(221, 215, 229);
     width:100%;
     height:100%;

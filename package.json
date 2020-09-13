@@ -1,13 +1,16 @@
 {
   "name": "Portfolio_2.0",
   "version": "1.0.0",
+  "engines": {
+    "yarn": "1.22.0"
+  },
   "main": "index.js",
   "repository": "https://github.com/Zevubu/Portfolio_2.0.git",
   "author": "Zev Hoffman <zevubu@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
-    "start:prod": "node server.js",
+    "start:prod": "node index.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn run client\"",
     "client": "cd client && yarn run start",
     "seed": "node scripts/seedDB.js",
