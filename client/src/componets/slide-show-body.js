@@ -42,12 +42,12 @@ function SlideFiller(props){
                         <PB>{props.About}</PB>
                     </TextBox>
                     <FlexBoxCentered>
-                    <VFrameS 
-                        src={props.VLink} 
-                        frameborder="0" 
-                        allow="autoplay; fullscreen" 
-                        allowfullscreen 
-                    />
+                        <VFrameS 
+                            src={props.VLink} 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen" 
+                            allowfullscreen 
+                        />
                     </FlexBoxCentered>
                     <TextBox>
                         <H2>Experience Includes:</H2>

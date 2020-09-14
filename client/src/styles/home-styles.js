@@ -337,9 +337,10 @@ width:100%;
 margin:0px;
 align-items: center;
 display: grid;
-grid-template-rows: 60px 60px auto 100px 80px 30px 30px;
+grid-template-rows: 60px 80px auto 100px 80px 30px 30px;
 justify-self: center;
 @media only screen and (max-width: 800px) {
+    grid-template-rows: 60px 85px auto 155px 85px 30px 30px;
     width: 240px;
     };
 `
